@@ -10,7 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <!-- <ion-list>
     <ion-item *ngFor="let item of items">
       <ion-icon [name]="item.icon" slot="start"></ion-icon>
       {{item.title}}
@@ -18,7 +18,21 @@
         {{item.note}}
       </div>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
+
+
+
+  <ion-input type="text" clearInput value="Readonly" disabled placeholder="Type your name"></ion-input>
+
+  <!-- Checkboxes in a List -->
+<ion-list>
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.textshow}}</ion-label>
+    <ion-checkbox slot="start" [(ngModel)]="entry.isChecked" (ionChange)="checkChanged(entry)"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+
   <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>
