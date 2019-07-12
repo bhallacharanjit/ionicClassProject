@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { ListPage } from './list.page';
 
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -20,4 +22,9 @@ import { ListPage } from './list.page';
   ],
   declarations: [ListPage]
 })
-export class ListPageModule {}
+export class ListPageModule {
+    
+    
+
+    
+}
